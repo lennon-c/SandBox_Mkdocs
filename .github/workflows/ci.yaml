@@ -28,6 +28,6 @@ jobs:
       - run: pip install mkdocs-material 
       - run: pip install mkdocstrings-python
       - run: pip install markdown-exec[ansi]
-      - run: pip mkdocs-open-in-new-tab
-      - run: pip mkdocs-callouts
+      - run: pip install mkdocs-open-in-new-tab
+      - run: pip install mkdocs-callouts
       - run: mkdocs gh-deploy --force
