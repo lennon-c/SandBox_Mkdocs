@@ -111,7 +111,7 @@ def bubble_sort(items):
 
 This does not work in production `mkdocs gh-deploy`, but in development `mkdocs serve`
 
-```python exec="true" source="tabbed-left" result="pycon"
+```python exec="true" source="tabbed-left" result="pycon"  workdir=".."
 from sandbox.calculations import Two_numbers
 
 nums = Two_numbers(4, 2)
