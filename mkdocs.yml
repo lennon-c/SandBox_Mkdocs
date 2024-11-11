@@ -1,5 +1,5 @@
 site_name: Sandbox for Mkdocs
-# repo_url: https://github.com/lennon-c/de_wiktio
+repo_url: https://lennon-c.github.io/SandBox_Mkdocs/
 theme:
   name: "material"
   palette:
