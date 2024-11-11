@@ -38,7 +38,7 @@ nav:
 plugins:
   - autorefs
   - search
-  - callouts # obsidian callout, requires mkdocs-callouts 
+  # - callouts # obsidian callout, requires mkdocs-callouts 
   - open-in-new-tab: # requires mkdocs-open-in-new-tab
       add_icon: false
   - markdown-exec # markdown-exec
