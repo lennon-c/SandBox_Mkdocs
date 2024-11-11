@@ -109,9 +109,16 @@ def bubble_sort(items):
 
 ### Using python-exec (code execution at build)
 
-```python exec="true" source="tabbed-left"
+This does not work in production `mkdocs gh-deploy`, but in development `mkdocs serve`
+
+```python exec="true" source="tabbed-left" result="pycon"
 from sandbox.calculations import Two_numbers
 
 nums = Two_numbers(4, 2)
 print(f'{nums.add()=}')
+```
+
+```python exec="true" source="tabbed-left" result="pycon"
+import os
+print(os.getcwd())
 ```
