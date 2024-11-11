@@ -81,8 +81,8 @@ markdown_extensions:
 - pymdownx.details
 - pymdownx.superfences
 - pymdownx.betterem
-# - pymdownx.tabbed:  
-- pymdownx.blocks.tab:
+- pymdownx.tabbed:  
+# - pymdownx.blocks.tab:
     alternate_style: true
 - toc:
     title: On this page  

@@ -16,7 +16,6 @@ mkdocs-material = "^9.5.42"
 mkdocstrings-python = "^1.12.2"
 markdown-exec = {extras = ["ansi"], version = "^1.9.3"}
 mkdocs-open-in-new-tab = "^1.0.7"
-mkdocs-callouts = "^1.14.0"
 
 
 [build-system]
