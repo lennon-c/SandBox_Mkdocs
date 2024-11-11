@@ -23,6 +23,18 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/lennon-c
 
+
+nav:
+- Sandbox for Mkdocs: README.md
+- API: 
+  - API/index.md 
+  - API/calculations.md
+  - API/sandbox.md
+- Playground: 
+  - Playground/index.md
+
+
+
 plugins:
   - autorefs
   - search
@@ -52,13 +64,6 @@ plugins:
             summary: true
 
 
-nav:
-- Sandbox for Mkdocs: README.md
-
-- API: 
-  - API/index.md 
-  - API/calculations.md
-  - API/sandbox.md
 
 
 watch:  
