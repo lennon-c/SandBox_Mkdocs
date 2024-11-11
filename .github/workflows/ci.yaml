@@ -26,6 +26,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material 
+      - run: pip install mkdocstrings-python
       - run: pip install markdown-exec[ansi]
       - run: pip mkdocs-open-in-new-tab
       - run: pip mkdocs-callouts
