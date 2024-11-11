@@ -4,4 +4,4 @@ Playing with options of:
 - mkdocstrings-python
 - markdown-exec[ansi]
 - mkdocs-open-in-new-tab
-- mkdocs-callouts
+- mkdocs-callouts (disabled, used to allow obsidian syntax for callouts)

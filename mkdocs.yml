@@ -1,5 +1,5 @@
 site_name: Sandbox for Mkdocs
-repo_url: https://lennon-c.github.io/SandBox_Mkdocs/
+repo_url: https://github.com/lennon-c/SandBox_Mkdocs
 theme:
   name: "material"
   palette:
@@ -21,7 +21,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/lennon-c
+      link: https://github.com/lennon-c/
 
 
 nav:
