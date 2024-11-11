@@ -3,7 +3,7 @@ name = "sandbox"
 version = "0.1.0"
 description = ""
 authors = ["Carolina Lennon <14179052+lennon-c@users.noreply.github.com>"]
-readme = "README.md"
+readme = "docs/README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
