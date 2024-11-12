@@ -31,13 +31,12 @@ nav:
   - Playground/formatting.md
   - Playground/code execution.md
   - Playground/pyodide.md
+  - Playing with links: Playground/links.md
 - API: 
   - API/index.md 
   - API/calculations.md
   - API/sandbox.md
-  - Dealing with links: API/links.md
-
-
+ 
 
 
 plugins:
@@ -79,7 +78,7 @@ extra_css: # some changes for mkdocstrings
 markdown_extensions:
 - attr_list
 - md_in_html 
-# - nl2br # obsidian callout
+- nl2br # obsidian callout
 # - wikilinks
 - admonition
 - pymdownx.details
