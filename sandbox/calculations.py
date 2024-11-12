@@ -13,6 +13,14 @@ class Two_numbers():
     def __init__(self, first: Union[float, int], second: Union[float, int]):
         """Initiate my number.
 
+        Examples:
+            ```python exec="true" source="tabbed-left" result="pycon"  
+            from sandbox.calculations import Two_numbers
+
+            nums = Two_numbers(4, 2)
+            print(f'{nums.add()=}')
+            ```
+
         Args:
             first: the first number 
             second: the second number  
@@ -20,14 +28,17 @@ class Two_numbers():
         self.first: Union[float, int]= first
         """The first number."""
         self.second = second
+        """The second number."""
  
     
-    def add(self) -> Union[float, int]:
-        """Add my two numbers.
+    def add(self, *args) -> Union[float, int]:
+        """Add my two numbers, and if additional numbers are provided, add them to the sum.
         
         Returns:
-            A number representing the arithmetic sum of `first` and `second`.
+            A number representing the arithmetic of all the numbers.
         """
+        if len(args) > 0:
+            return sum(args) + add(self.first, self.second)
         return add(self.first, self.second)
     
     def subtract(self) -> Union[float, int]:

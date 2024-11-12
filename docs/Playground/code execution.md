@@ -76,4 +76,4 @@ Solution:
 - Since it requires an install, one has to setup the source code as a package.
     - I am using poetry, so I just had to make sure to add the required documentation for packaging, but there was no need for a package wheel! 
 
-This is really cool, one can thus use `markdown-exec` to showcase own projects that are hosted in GitHub.
+This is really cool, one can thus use `markdown-exec` to showcase own projects that are hosted in GitHub. Or to insert examples in the docstrings as for class [`Two_numbers`](/API/calculations/#sandbox.calculations.Two_numbers)

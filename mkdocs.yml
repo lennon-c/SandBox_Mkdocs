@@ -50,9 +50,7 @@ plugins:
       handlers:
         python:
           import:
-            - https://lxml.de/apidoc/objects.inv
             - https://docs.python.org/3/objects.inv
-            - https://mwparserfromhell.readthedocs.io/en/latest/objects.inv
           options:
             allow_inspection: false
             show_root_heading: true
@@ -73,8 +71,9 @@ plugins:
 watch:  
   - sandbox
 
-# extra_css: # some changes for mkdocstrings 
-#   - css/mkdocstrings.css
+extra_css: # some changes for mkdocstrings 
+  - css/mkdocstrings.css
+  # - css/mkdocstrings_simple.css
 
 markdown_extensions:
 - attr_list
