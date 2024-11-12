@@ -26,12 +26,16 @@ extra:
 
 nav:
 - Sandbox for Mkdocs: README.md
+- Playground: 
+  - Playground/index.md
+  - Playground/formatting.md
+  - Playground/code execution.md
+  - Playground/pyodide.md
 - API: 
   - API/index.md 
   - API/calculations.md
   - API/sandbox.md
-- Playground: 
-  - Playground/index.md
+
 
 
 
@@ -75,7 +79,7 @@ watch:
 markdown_extensions:
 - attr_list
 - md_in_html 
-- nl2br # obsidian callout
+# - nl2br # obsidian callout
 # - wikilinks
 - admonition
 - pymdownx.details
