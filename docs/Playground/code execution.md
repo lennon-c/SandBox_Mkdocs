@@ -77,3 +77,23 @@ Solution:
     - I am using poetry, so I just had to make sure to add the required documentation for packaging, but there was no need for a package wheel! 
 
 This is really cool, one can thus use `markdown-exec` to showcase own projects that are hosted in GitHub. Or to insert examples in the docstrings as for class [`Two_numbers`][sandbox.calculations.Two_numbers]
+
+## Prints 
+
+```python exec="true" source="tabbed-left" result="pycon"
+from sandbox.prints import Printer 
+printer = Printer()
+printer.print_me()
+```
+
+```python exec="1" source="tabbed-left" result="pycon"
+from sandbox.prints import function_print
+function_print()
+```
+
+```python exec="1" source="tabbed-left" result="pycon"
+def print_from_script():
+    print("print from the script")
+
+print_from_script()
+```

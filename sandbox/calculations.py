@@ -8,18 +8,19 @@ This module allows the user to make mathematical calculations.
 from typing import Union, Optional, Any
 
 class Two_numbers(): 
-    """Several sample math calculations using two numbers."""
+    """Several sample math calculations using two numbers.
+    
+    Examples:
+        ```pycon exec="true" source="console"  
+        >>> from sandbox.calculations import Two_numbers
+        >>> nums = Two_numbers(4, 2)
+        >>> print(f'{nums.add()=}')
+        ```
+ 
+    """
 
     def __init__(self, first: Union[float, int], second: Union[float, int]):
         """Initiate my number.
-
-        Examples:
-            ```python exec="true" source="tabbed-left" result="pycon"  
-            from sandbox.calculations import Two_numbers
-
-            nums = Two_numbers(4, 2)
-            print(f'{nums.add()=}')
-            ```
 
         Args:
             first: the first number 
