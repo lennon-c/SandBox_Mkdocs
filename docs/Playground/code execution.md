@@ -80,6 +80,9 @@ This is really cool, one can thus use `markdown-exec` to showcase own projects t
 
 ## Prints 
 
+Sadly, it cannot capture prints from imported code
+Nothing will be printed in the following two blocks.
+
 ```python exec="true" source="tabbed-left" result="pycon"
 from sandbox.prints import Printer 
 printer = Printer()
@@ -90,6 +93,8 @@ printer.print_me()
 from sandbox.prints import function_print
 function_print()
 ```
+
+It is only able to see prints from functions created in the current session. 
 
 ```python exec="1" source="tabbed-left" result="pycon"
 def print_from_script():

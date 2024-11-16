@@ -1,4 +1,4 @@
-Playing with options, plugins, formatting of:
+Playground for testing options, plugins, formatting of:
 
 - mkdocs
 - mkdocs-material 
@@ -7,5 +7,6 @@ Playing with options, plugins, formatting of:
 - mkdocs-open-in-new-tab
 - mkdocs-callouts (disabled, used to allow Obsidian syntax for callouts)
 
+Just a set of personal tests, to see what works and what does not. 
 
 Showcased in this project's [documentation](https://lennon-c.github.io/SandBox_Mkdocs/)
