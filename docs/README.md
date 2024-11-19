@@ -12,6 +12,11 @@ Just a set of personal tests, to see what works and what does not.
 Showcased in this project's [documentation](https://lennon-c.github.io/SandBox_Mkdocs/)
 
 
-```python exec="true" source="tabbed-left" result="pycon"
+
+## Adding python exec in Readme
+
+This code is shown but not 
+
+```python exec="true"  
 print('hello')
 ```
