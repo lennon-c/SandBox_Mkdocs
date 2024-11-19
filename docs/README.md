@@ -10,3 +10,10 @@ Playground for testing options, plugins, formatting of:
 Just a set of personal tests, to see what works and what does not. 
 
 Showcased in this project's [documentation](https://lennon-c.github.io/SandBox_Mkdocs/)
+
+
+```python exec="true" source="tabbed-left" result="pycon"
+from sandbox.prints import Printer 
+printer = Printer()
+printer.print_me()
+```
