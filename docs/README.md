@@ -13,7 +13,5 @@ Showcased in this project's [documentation](https://lennon-c.github.io/SandBox_M
 
 
 ```python exec="true" source="tabbed-left" result="pycon"
-from sandbox.prints import Printer 
-printer = Printer()
-printer.print_me()
+print('hello')
 ```
