@@ -176,74 +176,6 @@
   </nav>
   
     
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
-  
-    
-  
-  Sandbox for Mkdocs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
-          
-  
-    
-  
-  Playground
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../API/" class="md-tabs__link">
-          
-  
-    
-  
-  API
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
-</nav>
-    
   
 </header>
     
@@ -263,10 +195,8 @@
                     
 
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Sandbox for Mkdocs" class="md-nav__button md-logo" aria-label="Sandbox for Mkdocs" data-md-component="logo">
       
@@ -334,16 +264,12 @@
       
         
       
-    
-    
-      
-        
         
       
-      
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
@@ -363,7 +289,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -462,6 +388,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GitHub%20actions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub actions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -490,17 +437,12 @@
       
     
     
-      
-      
-    
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           
@@ -642,9 +584,29 @@
 <ul>
 <li><a href="code execution">code execution</a></li>
 <li><a href="formatting">formatting</a></li>
+<li><a href="GitHub actions">GitHub actions</a></li>
 <li><a href="links">links</a></li>
 <li><a href="pyodide">pyodide</a></li>
 </ul>
+<p>This page generates on the fly the links above using this markdown code: </p>
+<div class="language-markdown highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="sb">```python</span><span class="w"> </span>exec=&#39;1&#39;
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="n">path</span> <span class="o">=</span>  <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;_file_&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span>
+
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">(</span><span class="n">path</span> <span class="o">/</span> <span class="s1">&#39;docs&#39;</span><span class="o">/</span> <span class="s1">&#39;Playground&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">iterdir</span><span class="p">():</span>
+    <span class="k">if</span>  <span class="n">p</span><span class="o">.</span><span class="n">stem</span> <span class="o">==</span> <span class="s1">&#39;index&#39;</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;- [</span><span class="si">{</span><span class="n">p</span><span class="o">.</span><span class="n">stem</span><span class="w"> </span><span class="si">}</span><span class="s1">](</span><span class="si">{</span><span class="n">p</span><span class="o">.</span><span class="n">stem</span><span class="w"> </span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+<span class="sb">```</span>
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -757,7 +719,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tabs.link", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "navigation.top"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tabs.link", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "navigation.top"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>

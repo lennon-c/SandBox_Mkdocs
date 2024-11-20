@@ -181,74 +181,6 @@
   </nav>
   
     
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-    
-  
-  Sandbox for Mkdocs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
-          
-  
-    
-  
-  Playground
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../API/" class="md-tabs__link">
-          
-  
-    
-  
-  API
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
-</nav>
-    
   
 </header>
     
@@ -268,10 +200,8 @@
                     
 
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Sandbox for Mkdocs" class="md-nav__button md-logo" aria-label="Sandbox for Mkdocs" data-md-component="logo">
       
@@ -339,16 +269,12 @@
       
         
       
-    
-    
-      
-        
         
       
-      
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
@@ -368,7 +294,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -550,6 +476,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GitHub%20actions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub actions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -578,17 +525,12 @@
       
     
     
-      
-      
-    
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           
@@ -804,14 +746,26 @@
 <p class="admonition-title">this is a <code>info</code> admonition</p>
 <p>This is the admonition body</p>
 </div>
+<div class="language-md highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>!!! info &quot;this is a <span class="sb">`info`</span> admonition&quot;
+    This is the admonition body
+</code></pre></div></td></tr></table></div>
 <details class="note">
-<summary>collapsable admonition - closed by defualt</summary>
+<summary>collapsable admonition - closed by default</summary>
 <p>you can close me.</p>
 </details>
+<div class="language-md highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>??? note &quot;collapsable admonition - closed by default&quot;
+    you can close me.
+</code></pre></div></td></tr></table></div>
 <details class="note" open="open">
-<summary>collapsable admonition - opened by defualt</summary>
+<summary>collapsable admonition - opened by default</summary>
 <p>you can close me.</p>
 </details>
+<div class="language-md highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>???+ note &quot;collapsable admonition - opened by default&quot;
+    you can close me.
+</code></pre></div></td></tr></table></div>
 <h2 id="grid-cards">grid cards<a class="headerlink" href="#grid-cards" title="Permanent link">&para;</a></h2>
 <p><a href="https://squidfunk.github.io/mkdocs-material/reference/grids/?h=grid#using-card-grids">see docs</a><br />
 cards are not displayed in editor</p>
@@ -1005,7 +959,7 @@ lines colors and numbers are not rendered in editor</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.tabs.link", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "navigation.top"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.tabs.link", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "navigation.top"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
