@@ -15,8 +15,8 @@ Showcased in this project's [documentation](https://lennon-c.github.io/SandBox_M
 
 ## Adding python exec in Readme
 
-This code is shown but not 
+This code block is shown but not executed in README.md, while it is executed in the documentation site, where only the result is shown.
 
 ```python exec="true"  
-print('hello')
+print('I am in README.md and in the Home page')
 ```

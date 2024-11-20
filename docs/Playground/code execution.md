@@ -60,10 +60,15 @@ nums = Two_numbers(4, 2)
 print(f'{nums.add()=}')
 ```
 ````
+### Using `mkdocs gh-deploy` manually
 
-My first trial did only work  partially:
 
-- It was actually working for development `mkdocs serve`, but not in production `mkdocs gh-deploy`.
+
+### Using GitHub actions
+
+My first trial working with GitHub actions did only work  partially:
+
+- It was actually working for development `mkdocs serve`, but not in production.
 
 Solution:
 
