@@ -8,8 +8,8 @@ theme:
   features:
     - content.code.copy
     - content.tabs.link
-    - navigation.expand
-    - navigation.tabs
+    # - navigation.expand
+    # - navigation.tabs
     - navigation.tabs.sticky
     - navigation.footer
     - navigation.indexes
@@ -32,6 +32,7 @@ nav:
   - Playground/code execution.md
   - Playground/pyodide.md
   - Playing with links: Playground/links.md
+  - Playground/GitHub actions.md
 - API: 
   - API/index.md 
   - API/calculations.md

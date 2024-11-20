@@ -41,6 +41,9 @@ print(os.getcwd())
 ````
 
 ## running own hosted module in GitHub
+This is really cool, one can use `markdown-exec` to showcase own projects that are hosted in GitHub. Or to insert examples in the docstrings as for class [`Two_numbers`][sandbox.calculations.Two_numbers]
+
+
 Here, a python script importing a class from this project module `sandbox.calculations.Two_numbers`.
 
 ```python exec="true" source="tabbed-left" result="pycon"  
@@ -62,7 +65,8 @@ print(f'{nums.add()=}')
 ````
 ### Using `mkdocs gh-deploy` manually
 
-
+With poetry, this work out of the box.
+No tested without poetry, probably you will need to install the package in the environment first. 
 
 ### Using GitHub actions
 
@@ -81,7 +85,7 @@ Solution:
 - Since it requires an install, one has to setup the source code as a package.
     - I am using poetry, so I just had to make sure to add the required documentation for packaging, but there was no need for a package wheel! 
 
-This is really cool, one can thus use `markdown-exec` to showcase own projects that are hosted in GitHub. Or to insert examples in the docstrings as for class [`Two_numbers`][sandbox.calculations.Two_numbers]
+
 
 ## Prints 
 

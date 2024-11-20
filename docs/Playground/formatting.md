@@ -20,18 +20,31 @@ for path in sys.path:
 ```md
 !!! note "This is the admonition title of a `note`"
     body 
-
 ```
 
 !!! info "this is a `info` admonition"
     This is the admonition body
 
-??? note "collapsable admonition - closed by defualt"
+```md
+!!! info "this is a `info` admonition"
+    This is the admonition body
+```
+
+??? note "collapsable admonition - closed by default"
     you can close me.
 
-???+ note "collapsable admonition - opened by defualt"
+```md
+??? note "collapsable admonition - closed by default"
+    you can close me.
+```
+
+???+ note "collapsable admonition - opened by default"
     you can close me.
 
+```md
+???+ note "collapsable admonition - opened by default"
+    you can close me.
+```
 
 ## grid cards 
 
