@@ -1,3 +1,6 @@
+# Disable GitHub actions
+/.github/
+
 # MkDocs documentation
 /site/
 
