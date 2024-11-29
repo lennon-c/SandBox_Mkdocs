@@ -11,7 +11,7 @@ for path in sys.path:
 
 ## admonition or callout
 
-[see the documentation](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage)
+[see the documentation](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage).
 
 
 !!! note "This is the admonition title of a `note`"
@@ -49,7 +49,6 @@ for path in sys.path:
 ## grid cards 
 
 [see docs](https://squidfunk.github.io/mkdocs-material/reference/grids/?h=grid#using-card-grids)
-cards are not displayed in editor
 
 <div class="grid cards" markdown>
 
@@ -60,10 +59,24 @@ cards are not displayed in editor
 
 </div>
 
+Run using:
+````md
+<div class="grid cards" markdown>
+
+- :fontawesome-brands-html5: __HTML__ for content and structure
+- :fontawesome-brands-js: __JavaScript__ for interactivity
+- :fontawesome-brands-css3: __CSS__ for text running out of boxes
+- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
+
+</div>
+ 
+````
+Cards are not displayed in vscode editor, nor Obsidian. 
+
 ## linenums 
-For showing line numbers in code and for highlighting code lines
+For showing line numbers in code and for highlighting code lines.
+
 [See docs](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#adding-line-numbers)
-lines colors and numbers are not rendered in editor
 
 ``` py linenums="1"
 def bubble_sort(items):
@@ -73,6 +86,18 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 
+Rendered from this code:
+
+````md
+``` py linenums="1"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+````
+
 ``` py hl_lines="2 3"
 def bubble_sort(items):
     for i in range(len(items)):
@@ -80,6 +105,20 @@ def bubble_sort(items):
             if items[j] > items[j + 1]:
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
+
+Rendered from this code:
+
+````md
+``` py hl_lines="2 3"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+````
+
+Lines colors and numbers are not rendered in editor/obsidian.
 
 ## tabbed 
 

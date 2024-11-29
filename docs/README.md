@@ -15,8 +15,16 @@ Showcased in this project's [documentation](https://lennon-c.github.io/SandBox_M
 
 ## Adding python exec in Readme
 
-This code block is shown but not executed in README.md, while it is executed in the documentation site, where only the result is shown.
+I do not use an `index.md` file as the entry point for the website. Instead, I use a `README.md` file, which serves as both the homepage of the site and the documentation on GitHub, reducing boilerplate.
+
+However, some markup features are not supported when the `README.md` file is viewed directly on GitHub.
+
+For example, code execution does not work on GitHub:
+
+The following code block is displayed but not executed on GitHub, whereas it is executed on the documentation site.
+
 
 ```python exec="true"  
-print('I am in README.md and in the Home page')
+print('***I am in README.md and in the Home page***')
 ```
+

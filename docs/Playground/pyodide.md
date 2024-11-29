@@ -1,11 +1,10 @@
-This allows for interactive python. 
-It requires installing `markdown-exec`. [See the documentation](https://pawamoy.github.io/markdown-exec/usage/pyodide/)
+This allows for interactive Python execution. To use it, you need to install `markdown-exec`. [See the documentation](https://pawamoy.github.io/markdown-exec/usage/pyodide/) for more information.
 
-It is very cool, but has several limitations: 
+It is very cool, but it has several limitations:
 
-- Although it should work well for most of the python built-in modules, it does not support all of of them, for instance, there is no support for `tkinter`! 
-- You can install from PyPi, but only pure python modules.
-- There is support for some non pure python packages such as `numpy` 
+- While it should work well for most built-in Python modules, it does not support all of them. For instance, there is no support for `tkinter`!
+- You can install packages from PyPi, but only pure Python modules are supported.
+- There is support for some non-pure Python packages, such as `numpy`.
 
 ```pyodide
 import os, sys 
@@ -27,9 +26,9 @@ for path in sys.path:
 ````
 
 
-## packages of project hosted in GitHub
+## Packages of Project Hosted in GitHub
 
-this will not work, pyodide cannot access your documentation, nor the installs at deployment.
+This will not work, pyodide cannot access your documentation, nor the installs at deployment.
 
 ```pyodide
 from sandbox.calculations import Two_numbers
@@ -38,7 +37,7 @@ nums = Two_numbers(4, 2)
 print(f'{nums.add()=}')
 ```
 
-There is a not that optimal solution: 
+This is a not very elegant solution, but it works:
 
 ```pyodide   install="pyodide-importer"
 
@@ -51,5 +50,3 @@ nums = Two_numbers(4, 2)
 print(f'{nums.add()=}')
  
 ```
-
-This will work only for projects that are pure python and relies on only pure python packages! 
