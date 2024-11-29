@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#link-to-a-docstring-element" class="md-skip">
+        <a href="#linking-other-pages-in-the-project" class="md-skip">
           Skip to content
         </a>
       
@@ -423,9 +423,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#link-to-a-docstring-element" class="md-nav__link">
+  <a href="#linking-other-pages-in-the-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Link to a docstring element:
+      Linking Other Pages in the Project
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linking Other Pages in the Project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#links-in-the-readmemd-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Links in the README.md File
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-to-a-docstring-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link to a Docstring Object:
     </span>
   </a>
   
@@ -622,9 +646,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#link-to-a-docstring-element" class="md-nav__link">
+  <a href="#linking-other-pages-in-the-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Link to a docstring element:
+      Linking Other Pages in the Project
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linking Other Pages in the Project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#links-in-the-readmemd-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Links in the README.md File
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-to-a-docstring-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link to a Docstring Object:
     </span>
   </a>
   
@@ -651,7 +699,26 @@
   <h1>Playing with links</h1>
 
 <p>Linking things can be tricky...</p>
-<h2 id="link-to-a-docstring-element">Link to a docstring element:<a class="headerlink" href="#link-to-a-docstring-element" title="Permanent link">&para;</a></h2>
+<h2 id="linking-other-pages-in-the-project">Linking Other Pages in the Project<a class="headerlink" href="#linking-other-pages-in-the-project" title="Permanent link">&para;</a></h2>
+<p>It is recommended to use <a href="https://www.mkdocs.org/user-guide/writing-your-docs/#linking-to-pages">relative paths</a> when linking to other pages in the project. The paths should be relative to the location of the current file containing the link and should point to <code>.md</code> files.</p>
+<p>For instance: </p>
+<p>Go to <a href="../../">Home Page</a></p>
+<div class="language-md highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Go to [<span class="nt">Home Page</span>](<span class="na">../README.md</span>)
+</code></pre></div></td></tr></table></div>
+<h3 id="links-in-the-readmemd-file">Links in the <code>README.md</code> File<a class="headerlink" href="#links-in-the-readmemd-file" title="Permanent link">&para;</a></h3>
+<p>I do not use an <code>index.md</code> file as the entry point for the website. Instead, I use a <code>README.md</code> file, which serves both as the homepage of the site and as the documentation on GitHub, reducing boilerplate.</p>
+<p>However, this approach has the following drawback:</p>
+<ul>
+<li>Links using relative paths will not work when the <code>README.md</code> file is accessed directly on GitHub.<ul>
+<li>To address this, use external links with a URL address in production.</li>
+</ul>
+</li>
+</ul>
+<p>Go to <a href="https://lennon-c.github.io/SandBox_Mkdocs/">Home Page</a></p>
+<div class="language-md highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Markdown</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Go to [<span class="nt">Home Page</span>](<span class="na">https://lennon-c.github.io/SandBox_Mkdocs/</span>)
+</code></pre></div></td></tr></table></div>
+<h2 id="link-to-a-docstring-object">Link to a Docstring Object:<a class="headerlink" href="#link-to-a-docstring-object" title="Permanent link">&para;</a></h2>
+<p>Here, one uses square brackets and employs dot notation to link to objects within the package.</p>
 <p>link to class <code>sandbox.calculations.Two_numbers</code></p>
 <ul>
 <li><a class="autorefs autorefs-internal" href="../../API/calculations/#sandbox.calculations.Two_numbers">link to class</a></li>

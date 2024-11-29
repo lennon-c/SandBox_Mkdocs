@@ -404,7 +404,7 @@
         <li class="md-nav__item">
   <a href="#packages-of-project-hosted-in-github" class="md-nav__link">
     <span class="md-ellipsis">
-      packages of project hosted in GitHub
+      Packages of Project Hosted in GitHub
     </span>
   </a>
   
@@ -624,7 +624,7 @@
         <li class="md-nav__item">
   <a href="#packages-of-project-hosted-in-github" class="md-nav__link">
     <span class="md-ellipsis">
-      packages of project hosted in GitHub
+      Packages of Project Hosted in GitHub
     </span>
   </a>
   
@@ -650,13 +650,12 @@
 
   <h1>Pyodide</h1>
 
-<p>This allows for interactive python. <br />
-It requires installing <code>markdown-exec</code>. <a href="https://pawamoy.github.io/markdown-exec/usage/pyodide/">See the documentation</a></p>
-<p>It is very cool, but has several limitations: </p>
+<p>This allows for interactive Python execution. To use it, you need to install <code>markdown-exec</code>. <a href="https://pawamoy.github.io/markdown-exec/usage/pyodide/">See the documentation</a> for more information.</p>
+<p>It is very cool, but it has several limitations:</p>
 <ul>
-<li>Although it should work well for most of the python built-in modules, it does not support all of of them, for instance, there is no support for <code>tkinter</code>! </li>
-<li>You can install from PyPi, but only pure python modules.</li>
-<li>There is support for some non pure python packages such as <code>numpy</code> </li>
+<li>While it should work well for most built-in Python modules, it does not support all of them. For instance, there is no support for <code>tkinter</code>!</li>
+<li>You can install packages from PyPi, but only pure Python modules are supported.</li>
+<li>There is support for some non-pure Python packages, such as <code>numpy</code>.</li>
 </ul>
 <p>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.16.0/ace.js"></script>
@@ -701,8 +700,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <span class="s">    print(path)</span>
 <span class="sb">```</span>
 </code></pre></div></td></tr></table></div></p>
-<h2 id="packages-of-project-hosted-in-github">packages of project hosted in GitHub<a class="headerlink" href="#packages-of-project-hosted-in-github" title="Permanent link">&para;</a></h2>
-<p>this will not work, pyodide cannot access your documentation, nor the installs at deployment.</p>
+<h2 id="packages-of-project-hosted-in-github">Packages of Project Hosted in GitHub<a class="headerlink" href="#packages-of-project-hosted-in-github" title="Permanent link">&para;</a></h2>
+<p>This will not work, pyodide cannot access your documentation, nor the installs at deployment.</p>
 <p>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.16.0/ace.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
@@ -730,7 +729,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 </script>
 </p>
-<p>There is a not that optimal solution: </p>
+<p>This is a not very elegant solution, but it works:</p>
 <p>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.16.0/ace.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
@@ -763,7 +762,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 </script>
 </p>
-<p>This will work only for projects that are pure python and relies on only pure python packages! </p>
 
 
 
